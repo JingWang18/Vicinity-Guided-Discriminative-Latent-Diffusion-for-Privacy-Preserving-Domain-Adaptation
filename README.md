@@ -144,9 +144,3 @@ If you find our work useful, please cite:
   year={2025}
 }
 ```
-
----
-
-Would you like me to **add an “Ablation & Analysis” section** (like varying diffusion steps, neighbor size, or removing DVD) so the README matches how SiLAN highlights extra reproducibility beyond just the main pipeline?
-
-
