@@ -21,7 +21,7 @@ Our method, **Discriminative Vicinity Diffusion (DVD)**, introduces a lightweigh
 * **Privacy-Preserving:** No need to generate raw images or share source data — only a frozen auxiliary diffusion module is used.
 * **Strong Results:** Outperforms state-of-the-art SFDA methods on Office-31, Office-Home, and VisDA.
 * **Generalization Benefits:** Improves source-supervised learning and boosts domain generalization.
-* 
+  
 ---
 
 ## 🔍 Method Overview
