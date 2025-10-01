@@ -21,6 +21,21 @@ Our method, **Discriminative Vicinity Diffusion (DVD)**, introduces a lightweigh
 * **Privacy-Preserving:** No need to generate raw images or share source data — only a frozen auxiliary diffusion module is used.
 * **Strong Results:** Outperforms state-of-the-art SFDA methods on Office-31, Office-Home, and VisDA.
 * **Generalization Benefits:** Improves source-supervised learning and boosts domain generalization.
+* 
+---
+
+## 🔍 Method Overview
+
+Our DVD consists of two main stages:
+
+1. **Source Training** – A source encoder $G_s$ is trained with label supervision. Discriminative Vicinity Diffusion (DVD) leverages a Gaussian sampler and diffusion module $D$ to learn vicinity-aware latent representations that preserve decision boundaries.
+2. **Target Adaptation** – The target encoder $G_t$ is adapted without source data. The frozen diffusion module $D$ generates source-like cues around target samples. These are aggregated by the SiLGA module to produce vicinity-aligned representations, which are optimized using classification and consistency losses.
+
+<p align="center">
+  <img src="training.png" alt="Method Overview" width="800"/>
+</p>
+
+*Figure: Overview of Discriminative Vicinity Diffusion (DVD). (a) Source training with vicinity-guided diffusion. (b) Target adaptation with frozen DVD and SiLGA aggregator for label-consistent alignment.*
 
 ---
 
