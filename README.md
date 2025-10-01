@@ -32,7 +32,7 @@ Our DVD consists of two main stages:
 2. **Target Adaptation** – The target encoder $G_t$ is adapted without source data. The frozen diffusion module $D$ generates source-like cues around target samples. These are aggregated by the SiLGA module to produce vicinity-aligned representations, which are optimized using classification and consistency losses.
 
 <p align="center">
-  <img src="training.png" alt="Method Overview" width="800"/>
+  <img src="training.png" alt="Method Overview" width="1000"/>
 </p>
 
 *Figure: Overview of Discriminative Vicinity Diffusion (DVD). (a) Source training with vicinity-guided diffusion. (b) Target adaptation with frozen DVD and SiLGA aggregator for label-consistent alignment.*
