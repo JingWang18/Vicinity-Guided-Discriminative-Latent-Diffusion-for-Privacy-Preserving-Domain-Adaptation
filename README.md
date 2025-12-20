@@ -49,12 +49,10 @@ pip install -r requirements.txt
 
 ## 📊 Running Experiments
 
-### Office-31 / Office-Home
-
 **Step 1. Source representation training**
 
 ```bash
-python source_pretrain_office.py
+python source_pretrain.py
 ```
 
 **Step 2. Move pre-trained weights**
@@ -66,41 +64,13 @@ mv san/* weight/
 **Step 3. Diffusion model training**
 
 ```bash
-python diffusion_office.py
+python diffusion.py
 ```
 
 **Step 4. Target adaptation**
 
 ```bash
-python adaptation_office_with_diffusion.py
-```
-
----
-
-### VisDA
-
-**Step 1. Source representation training**
-
-```bash
-python source_pretrain_visda.py
-```
-
-**Step 2. Move pre-trained weights**
-
-```bash
-mv san/* weight/
-```
-
-**Step 3. Diffusion model training**
-
-```bash
-python diffusion_visda.py
-```
-
-**Step 4. Target adaptation**
-
-```bash
-python adaptation_visda_with_diffusion.py
+python adaptation_with_diffusion.py
 ```
 
 ---
